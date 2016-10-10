@@ -1,0 +1,63 @@
+{
+	"name": "library-boilerplate",
+	"version": "1.0.0",
+	"description": "Starter project for creating libraries",
+	"main": "lib/SomeComponent.js",
+	"license": "MIT",
+	"repository": {
+		"type": "git"
+	},
+	"author": {
+		"name": "Joe Fusco",
+		"email": "joe.fusco@verndale.com"
+	},
+	"peerDependencies": {
+		"react": "^15.3.2"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.10.1",
+		"babel-core": "^6.10.4",
+		"babel-eslint": "^7.0.0",
+		"babel-jest": "^16.0.0",
+		"babel-loader": "^6.2.4",
+		"babel-plugin-transform-class-properties": "^6.10.2",
+		"babel-preset-es2015": "^6.9.0",
+		"babel-preset-react": "^6.11.1",
+		"babel-preset-stage-2": "^6.11.0",
+		"babel-register": "^6.9.0",
+		"del": "^2.2.1",
+		"gulp": "^3.9.1",
+		"gulp-clean-css": "^2.0.11",
+		"gulp-eslint": "^3.0.1",
+		"gulp-filelog": "~0.4.1",
+		"gulp-load-plugins": "~1.3.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^2.3.2",
+		"gulp-scss-lint": "^0.4.0",
+		"gulp-scss-lint-stylish": "^1.0.1",
+		"gulp-shell": "^0.5.2",
+		"gulp-util": "~3.0.7",
+		"gulp-watch": "~4.3.6",
+		"http-server": "^0.9.0",
+		"jest-cli": "^16.0.1",
+		"minimist": "~1.2.0",
+		"react": "^15.3.2",
+		"react-addons-test-utils": "^15.3.2",
+		"react-dom": "^15.3.2",
+		"run-sequence": "^1.2.1",
+		"webpack": "^1.13.2",
+		"webpack-dev-server": "^1.16.2"
+	},
+	"scripts": {
+		"test": "jest --coverage",
+		"build": "npm run dist && npm run lib",
+		"dist": "gulp && npm test && webpack --display-chunks --display-modules --progress --colors",
+		"lib": "babel src/js --out-dir lib"
+	},
+	"jest": {
+		"testPathIgnorePatterns": [
+			"<rootDir>/node_modules/"
+		]
+	},
+	"keywords": []
+}

@@ -1,0 +1,10 @@
+{
+	"css": {
+		"fileName": "component"
+	},
+	"scripts": {
+		"fileName": "component",
+		"entry": "Component",
+		"library": "Component"
+	}
+}
