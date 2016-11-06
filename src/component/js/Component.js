@@ -3,6 +3,8 @@
 import React, { Component, PropTypes } from 'react';
 import ComponentTwo from './ComponentTwo';
 
+import '../scss/styles.scss';
+
 class SomeComponent extends Component {
 	state = {
 

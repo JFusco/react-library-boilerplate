@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1478461765217" clover="3.2.0">
+  <project timestamp="1478461765217" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="33" coveredconditionals="19" methods="12" coveredmethods="11" elements="56" coveredelements="40" complexity="0" loc="11" ncloc="11" packages="1" files="2" classes="2">
+      <file name="Component.js" path="/Users/Rinzler/Projects/Personal/library-boilerplate/src/component/js/Component.js">
+        <metrics statements="7" coveredstatements="7" conditionals="29" coveredconditionals="16" methods="10" coveredmethods="10"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+      <file name="ComponentTwo.js" path="/Users/Rinzler/Projects/Personal/library-boilerplate/src/component/js/ComponentTwo.js">
+        <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
