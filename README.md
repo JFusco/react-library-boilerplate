@@ -11,6 +11,7 @@
 > Starter project for creating libraries
 
 ### Demo
+https://jfusco.github.io/react-library-boilerplate
 
 ## Getting Started ##
 
