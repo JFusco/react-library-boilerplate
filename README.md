@@ -66,12 +66,12 @@ If you don't care to override variables and just want to override actual styles 
 npm test
 ```
 
-[build-image]: https://travis-ci.org/JFusco/react-predictive-input.svg?branch=master
-[build-url]: https://travis-ci.org/JFusco/react-predictive-input
-[mit-image]: https://img.shields.io/npm/l/react-predictive-input.svg?style=flat-square
-[mit-url]: https://github.com/JFusco/react-predictive-input/blob/master/LICENSE
+[build-image]: https://travis-ci.org/JFusco/react-library-boilerplate.svg?branch=master
+[build-url]: https://travis-ci.org/JFusco/react-library-boilerplate
+[mit-image]: https://img.shields.io/npm/l/react-library-boilerplate.svg?style=flat-square
+[mit-url]: https://github.com/JFusco/react-library-boilerplate/blob/master/LICENSE
 [npm-version-image]: https://img.shields.io/npm/v/npm.svg?maxAge=2592000
-[dev-dep-image]: https://david-dm.org/JFusco/react-predictive-input/dev-status.svg
-[dev-dep-url]: https://david-dm.org/JFusco/react-predictive-input?type=dev
-[peer-dep-image]: https://david-dm.org/JFusco/react-predictive-input/peer-status.svg
-[peer-dep-url]: https://david-dm.org/JFusco/react-predictive-input?type=peer
+[dev-dep-image]: https://david-dm.org/JFusco/react-library-boilerplate/dev-status.svg
+[dev-dep-url]: https://david-dm.org/JFusco/react-library-boilerplate?type=dev
+[peer-dep-image]: https://david-dm.org/JFusco/react-library-boilerplate/peer-status.svg
+[peer-dep-url]: https://david-dm.org/JFusco/react-library-boilerplate?type=peer
