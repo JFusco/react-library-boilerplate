@@ -94,7 +94,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 		_createClass(SomeComponent, [{
 			key: 'componentWillMount',
-			value: function componentWillMount() {}
+			value: function componentWillMount() {
+				if (false) {
+					console.log('component mounted');
+				}
+			}
 		}, {
 			key: 'render',
 			value: function render() {

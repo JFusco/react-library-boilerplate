@@ -23,7 +23,9 @@ class SomeComponent extends Component {
 	}
 
 	componentWillMount(){
-
+		if (__DEV__){
+			console.log('component mounted');
+		}
 	}
 
 	render(){
