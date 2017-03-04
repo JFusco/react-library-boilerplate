@@ -18,24 +18,23 @@ module.exports =  {
 		library
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
-				loader: 'babel',
-				exclude: '/node_modules/',
-				test: /\.js?$/
+				test: /\.scss$/,
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: ['css-loader?sourceMap', 'sass-loader?sourceMap']
+				})
 			},
 			{
-				loader: ExtractTextPlugin.extract(
-					'style',
-					'css?sourceMap!sass?sourceMap'
-				),
-				test: /\.scss$/
+				test: /\.js?$/,
+				loader: 'babel-loader',
+				exclude: '/node_modules/'
 			}
 		]
 	},
 	plugins: [
-		new webpack.NoErrorsPlugin(),
-		new webpack.optimize.DedupePlugin(),
+		new webpack.NoEmitOnErrorsPlugin(),
 		new ExtractTextPlugin('styles.css'),
 		new CopyWebpackPlugin([
 			{ from: './src/example/index.html', to: './' },
@@ -43,6 +42,7 @@ module.exports =  {
 			{ from: './coverage', to: './coverage' }
 		]),
 		new webpack.DefinePlugin({
+			'__DEV__': process.env.NODE_ENV === 'development',
 			'process.env': {
 				'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
 			}
@@ -53,6 +53,6 @@ module.exports =  {
 		port: 8080
 	},
 	resolve: {
-		extensions: ['', '.js', '.scss']
+		extensions: ['.js', '.scss']
 	}
 };

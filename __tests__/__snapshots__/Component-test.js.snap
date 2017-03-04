@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suggestion snapshot should render 1`] = `
+<div>
+  <span>
+    Component
+  </span>
+  <div>
+    Component Two
+  </div>
+</div>
+`;
